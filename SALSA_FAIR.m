@@ -111,7 +111,7 @@ for i=2:size(overall_mat,1)
     end
     
     if kex2<=k2
-        ind_col=find(overall_mat(:,1)>=kex1 & overall_mat(:,1)<=kex2);
+        ind_col=find(overall_mat(:,1)>=kex1 & overall_mat(:,2)<=kex2);
         if isempty(ind_col)==0
             ind2_col=find(counter(overall_mat(ind_col,3),1)==min(counter(overall_mat(ind_col,3),1)) & overall_mat(ind_col,1)==min(overall_mat(ind_col,1)));
         
